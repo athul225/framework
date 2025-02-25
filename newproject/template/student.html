@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>
+                    id
+                </th>
+                <th>
+                    name
+                </th>
+                <th>
+                    age
+                </th>
+                <th>
+                    email
+                </th>
+                <th>
+                    class
+                </th>
+                <th>
+                    course
+                </th>
+                </tr>
+            </tr>
+        </thead>
+        <tbody>
+         
+            {% for i in datas %}
+            <tr>
+                <td>{{i.adm_no}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.age}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.clas}}</td>
+                <td>{{i.course}}</td>
+                <td><a href="../update/{{i.pk}}">Update</a></td>
+                <td><a href="../delete/{{i.pk}}">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p></p>
+    <p></p>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <p>Student Management</p>
+        <input type="number" name="id" id="" placeholder="enter student id">
+        <p><input type="text" name="name" id="" placeholder="enter student name"></p>
+        <p><input type="number" name="age" id="" placeholder="enter student age"></p>
+        <p><input type="email" name="email" id="" placeholder="enter student email"></p>
+        <p><input type="number" name="class" id="" placeholder="enter student class"></p>
+        <p><input type="text" name="course" id="" placeholder="enter student course"></p>
+        <p><input type="submit" value="add"></p>
+    </form>
+</body>
+</html>

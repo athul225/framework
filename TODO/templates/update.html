@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/todo_update.css' %}">
+</head>
+<body>
+    <form action="../todo_update/{{slno}}" method="POST">
+        {% csrf_token %}
+    <input type="text" name="todo" id="" value="{{sub}}" placeholder="Enter your content">
+    <button value="submit">Update</button>
+    </form>
+</body>
+</html>

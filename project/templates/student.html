@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        name
+                    </th>
+                    <th>
+                        age
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in data%}
+                <tr>
+                    <td>{{i.name}}</td>
+                    <td>{{i.age}}</td>
+                </tr>
+                {% endfor%}
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        name
+                    </th>
+                    <th>
+                        age
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in data1%}
+                <tr>
+                    <td>{{i.name}}</td>
+                    <td>{{i.age}}</td>
+                </tr>
+                {% endfor%}
+            </tbody>
+        </table>
+
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <input type="text" name="name" id="" placeholder="enter name">
+            <input type="number" name="age" id="" placeholder="enter age">
+            <input type="submit" value="add">
+        </form>
+
+</body>
+</html>

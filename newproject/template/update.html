@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update\</title>
+</head>
+<body>
+    <form action="../update/{{data1.pk}}" method="POST">
+        {% csrf_token %}
+        <p>Student Management</p>
+        <input type="number" name="id" id="" placeholder="enter student id" value="{{data1.adm_no}}"><br>
+        <input type="text" name="name" id="" placeholder="enter student name" value="{{data1.name}}"><br>
+        <input type="number" name="age" id="" placeholder="enter student age"value="{{data1.age}}"><br>
+        <input type="email" name="email" id="" placeholder="enter student email"value="{{data1.email}}"><br>
+        <input type="number" name="class" id="" placeholder="enter student class"value="{{data1.clas}}"><br>
+        <input type="text" name="course" id="" placeholder="enter student course"value="{{data1.course}}"><br>
+        <input type="submit" value="add"><br>
+    </form>
+</body>
+</html>

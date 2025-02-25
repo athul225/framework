@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css1/index.css' %}">
+</head>
+<body>
+    <div class="all">
+    <form action="../" method="POST">
+        {% csrf_token %}
+        <div class="main">
+            <div class="a">
+                <div class="a1">
+                    <input type="text" name="subject" placeholder="type here......!" required>
+                    <input type="submit" value="Add">
+                </div>
+            </div>
+            <div class="date">
+                <label for="date">
+                    <p>Date: {{ date }}</p>
+                </label>
+            </div>
+            
+        </div>
+        {% for i in subjects %}
+            <div class="b">
+                <table>
+                    <tr>
+                        <td class="b2">Sub: {{ i.sub }}</td>
+                        <td class="b3"><a href="{% url 'todo_update' i.slno %}">Update</a></td>
+                        <td class="b4"><a href="{% url 'todo_delete' i.slno %}">Delete</a></td>
+                    </tr>
+            </table>
+            </div>
+            {% endfor %}
+    </form>
+    </div>
+</body>
+</html>
