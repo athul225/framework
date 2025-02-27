@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="../" method="POST">
+        {% csrf_token %}
+        <h1>Student Management System</h1>
+        <p><input type="text" name="Name" id="" placeholder="Name"></p>
+        <p><input type="number" name="Age" id="" placeholder="Age"></p>
+        <p><input type="email" name="Email" id="" placeholder="Email"></p>
+        <p><select name="dname" id="">
+            <option selected disabled>---select your department---</option>
+            {% for i in dname %}
+            <option value="{{i.pk}}">{{i.dname}}</option>
+            {% endfor %}
+        </select></p>
+        <p><input type="submit" value="Submit" ></p>
+    </form>
+</body>
+</html>
