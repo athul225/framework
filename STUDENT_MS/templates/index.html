@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'Css/index.css' %}">
 </head>
 <body>
     
-    <form action="../" method="POST">
+    <form action="../index" method="POST">
         {% csrf_token %}
         <h1>Student Management System</h1>
-        <p><input type="text" name="Name" id="" placeholder="Name"></p>
-        <p><input type="number" name="Age" id="" placeholder="Age"></p>
-        <p><input type="email" name="Email" id="" placeholder="Email"></p>
-        <p><select name="dname" id="">
-            <option selected disabled>---select your department---</option>
-            {% for i in dname %}
-            <option value="{{i.pk}}">{{i.dname}}</option>
-            {% endfor %}
-        </select></p>
+        <div class="p1">
+            <p><input type="text" name="Name" id="" placeholder="Name"></p>
+        </div>
+        <div class="p2">
+            <p><input type="number" name="Age" id="" placeholder="Age"></p>
+        </div>
+        <div class="p3">
+            <p><input type="email" name="Email" id="" placeholder="Email"></p>
+        </div>
+        <div class="sel">
+            <p>
+                <select name="dname" id="">
+                    <option selected disabled>---select your department---</option>
+                    {% for i in dnames %}
+                    <option value="{{i.pk}}">{{i.dname}}</option>
+                    {% endfor %}
+                </select>
+            </p>
+        </div>
         <p><input type="submit" value="Submit" ></p>
     </form>
 </body>
