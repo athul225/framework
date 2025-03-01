@@ -1,0 +1,102 @@
+.all{
+
+background-image: url("https://wallpapers.com/images/hd/vegetables-and-beans-wallpaper-hd-whyd4oo3x83r47mg.jpg");
+width:100%;
+height: 100vh;
+background-repeat: no-repeat;
+background-size:cover ;
+padding:0px;
+
+}
+
+.main{
+    max-width: 450px;
+    position: relative;
+    top:270px;
+    left:600px;
+    /* margin: 100px auto; */
+    padding: 40px;
+    /* background-color:#130101; */
+    border-radius: 8px;
+    border-color: black;
+    background-image:url("https://i.pinimg.com/736x/95/f1/59/95f159c2e825ccd239a4d2fa705e68d7.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    
+
+}
+.hh{
+position: relative;
+left: -170px;
+text-align: center;
+color:#fafaff;
+font-size: 40px;
+margin-bottom: 20px;
+
+}
+
+.p2{
+/* width: 100%; */
+/* height:50px; */
+/* padding: 12px; */
+margin: 10px 0;
+
+border-radius: 5px;
+font-size: 16px;
+/* background-color: black; */
+}
+.pas{
+border: 1px solid #0616fc;
+width: 100%;
+height:50px;
+border-radius:10px;
+background-color:white;
+font-size: 16px;
+padding-left: 10px;
+
+
+}
+.p1{
+
+margin: 10px 0;  
+border-radius: 5px;  
+/* background-color: black; */
+}
+.un{
+font-size: 16px;
+border: 1px solid #0616fc;
+width: 100%;
+height:50px;
+border-radius:10px;
+background-color:white;
+padding-left: 10px;
+
+
+}
+
+.p3{
+margin: 10px 0;
+}
+.log{
+width: 25%;
+padding: 12px;
+background-color: #0854f8;
+color: white;
+font-size: 16px;
+border: none;
+border-radius: 4px;
+position: relative;
+left: 150px;
+}
+
+.p4{
+position: relative;
+top:15px ;
+left: 3px;
+color: white;
+}
+
+a {
+color:blue;
+text-decoration: none;
+}
