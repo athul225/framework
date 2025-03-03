@@ -19,8 +19,8 @@ def UserReg(request):
 
 def UserLogin(request):
     if request.method=='POST':
-        uname=request.POST['uname']
-        pwd=request.POST['password']
+        uname=request.POST['Username']
+        pwd=request.POST['Password']
         user=auth.authenticate(username=uname,password=pwd)
         if user is not None:
             auth.login(request,user)

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'csss/register.css' %}">
+</head>
+<body>
+    <div class="main">
+        <h1 class="hh">Sign up</h1>
+        <form action="../" method="POST">
+            {% csrf_token %}
+            <p class="p1">
+                <input type="text" name="Name" placeholder="Name" class="name">
+            </p>
+            <p class="p2">
+                <input type="email" name="Email" placeholder="Email" class="email">
+            </p>
+            <p class="p3">
+                <input type="text" name="Username" id="" placeholder="Username" class="uname">
+            </p>
+            <p class="p4">
+                <input type="password" name="Password" id="" placeholder="Password" class="psw">
+            </p>
+            <p class="p5">
+                <input type="password" name="cnf_pwd" id="" placeholder="Confirm Password" class="cnf">
+            </p>
+            <p class="p6">
+                <input type="submit" value="Register" class="add">
+            </p>
+            <p class="p7">Already have an account ??<a href="">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>
