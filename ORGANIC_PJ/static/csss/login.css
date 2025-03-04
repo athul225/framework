@@ -19,9 +19,12 @@ padding:0px;
     /* background-color:#130101; */
     border-radius: 8px;
     border-color: black;
-    background-image:url("https://i.pinimg.com/736x/95/f1/59/95f159c2e825ccd239a4d2fa705e68d7.jpg");
+    /* background-image:url("https://i.pinimg.com/736x/95/f1/59/95f159c2e825ccd239a4d2fa705e68d7.jpg");
     background-repeat: no-repeat;
-    background-size:cover ;
+    background-size:cover ; */
+    background-color:transparent;
+    border: 10px solid transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     
 
 }
@@ -56,7 +59,7 @@ padding-left: 10px;
 
 
 }
-.p1{
+.p3{
 
 margin: 10px 0;  
 border-radius: 5px;  
@@ -86,7 +89,7 @@ font-size: 16px;
 border: none;
 border-radius: 4px;
 position: relative;
-left: 150px;
+left: 170px;
 }
 
 .p4{
