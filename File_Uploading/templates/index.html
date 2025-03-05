@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {%load static%}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'image/image.png' %}">
+    <link rel="stylesheet" href="{% static }">
 </head>
 <body>
     <form action="" method="POST">
@@ -12,5 +15,12 @@
         <input type="text" name="" id="">
         <input type="submit" value="Submit">
     </form>
+    <div class="files">
+        {% for i in docs %}
+        <a href="{{i.doc.url}}">
+            <img src="{% static 'image/image.png' %}" alt="{{i.doc}}">
+        </a>
+        {% endfor %}
+    </div>
 </body>
 </html>
