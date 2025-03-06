@@ -12,12 +12,12 @@ body{
     max-width: 450px;
     position: relative;
     top:150px;
-    left:500px;
+    left:600px;
     /* margin: 100px auto; */
     padding: 40px;
     /* background-color:#130101; */
     border-radius: 10px;
-    border-color: black;
+    border-color: rgb(8, 8, 8);
     
     background-color:rgba(255, 255, 255, 0.26);
     border: 10px solid transparent;
@@ -56,12 +56,12 @@ body{
     background-color:rgba(255, 255, 255, 0);
     font-size: 16px;
     padding-left: 10px;
-    
+    color:white;
     
     }
     .hr1{
      position: relative;
-     top:-20px; 
+     top:-17px; 
      left:8px;  
     }
     .pas::placeholder{

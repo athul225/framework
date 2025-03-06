@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'image/image.png' %}">
-    <link rel="stylesheet" href="{% static }">
+    <link rel="stylesheet" href="{% static 'css6/index.css' %}">
 </head>
 <body>
     <form action="" method="POST">
         {%csrf_token %}
-        <input type="file" name="" id="">
-        <input type="text" name="" id="">
+        <input type="file" name="doc" id="">
+        <input type="text" name="des" id="">
         <input type="submit" value="Submit">
     </form>
     <div class="files">

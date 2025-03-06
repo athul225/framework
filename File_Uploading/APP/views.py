@@ -10,14 +10,38 @@ def index(request):
         data=Files.objects.create(doc=doc,des=des)
         data.save()
         return redirect(index)
-    return render(request,'index.html')
+    return render(request,'index.html',{'docs':docs})
+
+
+
 def register(request):
-
-
-
+    if request.method=='POST':
+        name=request.POST['Name']
+        email=request.POST['Email']
+        pwd=request.POST['Password']
+        cnf_pwd=request.POST['cnf_pwd']
+        if cnf_pwd==pwd:
+            data=User.objects.create(name=name,email=email,pwd=pwd)
+            data.save()
+        else:
+            print("password doesn't match")
+    
     return render(request,'register.html')
 
 def login(request):
-
-
+    if request.method=='POST':
+        email=request.POST['Email']
+        pwd=request.POST['pwd']
+        
+        try:
+            data=User.objects.get(pwd=pwd,email=email)
+            request.session['user']=email
+            return redirect(index)
+            
+        except:
+            print('Not found')
+            return redirect(login)
+    
     return render(request,'login.html')
+
+   
