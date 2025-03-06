@@ -6,7 +6,7 @@ body{
     align-items: center;
     height: 100vh;
     margin: -110;
-    background-image: url("https://img.freepik.com/free-vector/abstract-background-design-with-stars-blue_53876-59271.jpg");
+    background-image: url("https://img.freepik.com/free-vector/abstract-background-design-with-stars-blue_53876-59271.jpg?semt=ais_hybrid");
     background-repeat: no-repeat;
     background-size:cover ;
 }
@@ -17,7 +17,7 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
     width: 350px;
-    height: 450px;
+    height: 500px;
     text-align: center;
     /* background-image:url("https://i.pinimg.com/736x/95/f1/59/95f159c2e825ccd239a4d2fa705e68d7.jpg"); */
     /* background-repeat: no-repeat;
@@ -28,6 +28,7 @@ body{
 }
 .hh{
     color: hwb(0 100% 0%);
+    font-size:40px ;
 }
 .p1{
     margin: 10px 0;
@@ -36,11 +37,12 @@ body{
     
 }
 .name{
-    border: 1px solid #114f72a9;
+
     width: 80%;
     height:30px;
     border-radius:10px;
-    background-color:transparent;
+    border: 1px solid #02a0fc00;
+    background-color:rgba(255, 255, 255, 0);
     font-size: 16px;
     padding-left: 10px;
     position: relative;
@@ -53,13 +55,20 @@ body{
     color:rgba(255, 255, 255, 0.685)
 }
 
+.hr1{
+    position: relative;
+    top:0px; 
+    left:-13px;  
+    width:70%;
+   }
+
 .p2{
     margin: 10px 0;
     border-radius: 5px;
     font-size: 16px;
 }
 .email{
-    border: 1px solid #114f72a9;
+    border: 1px solid #114e7200;
     width: 80%;
     height:30px;
     border-radius:10px;
@@ -67,19 +76,25 @@ body{
     font-size: 16px;
     padding-left: 10px;
     position: relative;
-    top:10px;
+    top:15px;
     color: white;
 
 }
 .email::placeholder{
     color:rgba(255, 255, 255, 0.685)
 }
+.hr2{
+    position: relative;
+    top:4px; 
+    left:-13px;  
+    width:70%;
+   }
 .p3{
     margin: 10px 0;
     border-radius: 5px;
     font-size: 16px;
 }
-.uname{
+/* .uname{
     border: 1px solid #114f72a9;
     width: 80%;
     height:30px;
@@ -88,19 +103,19 @@ body{
     font-size: 16px;
     padding-left: 10px;
     position: relative;
-    top:10px;
+    top:80px;
     color: white;
 }
 .uname::placeholder{
     color:rgba(255, 255, 255, 0.685)
-}
+} */
 .p4{
     margin: 10px 0;
     border-radius: 5px;
     font-size: 16px;
 }
 .psw{
-    border: 1px solid #114f72a9;
+    border: 1px solid #114e7200;
     width: 80%;
     height:30px;
     border-radius:10px;
@@ -108,20 +123,26 @@ body{
     font-size: 16px;
     padding-left: 10px;
     position: relative;
-    top:10px;
+    top:20px;
     color: white;
 
 }
 .psw::placeholder{
     color:rgba(255, 255, 255, 0.685)
 }
+.hr3{
+    position: relative;
+    top:9px; 
+    left:-13px;  
+    width:70%;
+   }
 .p5{
     margin: 10px 0;
     border-radius: 5px;
     font-size: 16px;
 }
 .cnf{
-    border: 1px solid #114f72a9;
+    border: 1px solid #114e7200;
     width: 80%;
     height:30px;
     border-radius:10px;
@@ -129,13 +150,19 @@ body{
     font-size: 16px;
     padding-left: 10px;
     position: relative;
-    top:10px;
+    top:25px;
     color: white;
 
 }
 .cnf::placeholder{
     color:rgba(255, 255, 255, 0.685)
 }
+.hr4{
+    position: relative;
+    top:15px; 
+    left:-13px;  
+    width:70%;
+   }
 .add{
     
     width: 25%;
@@ -146,13 +173,13 @@ body{
     border: none;
     border-radius: 4px;
     position: relative;
-    top: 20px; 
+    top: 45px; 
         
 }
-.p7{
+.p6{
     position: relative;
-    top:35px ;
-    left: -15px;
+    top:65px ;
+    left: -29px;
     color: hsl(0, 20%, 99%); 
 }
 

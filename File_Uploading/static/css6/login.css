@@ -11,8 +11,8 @@ body{
 .main{
     max-width: 450px;
     position: relative;
-    top:270px;
-    left:600px;
+    top:150px;
+    left:500px;
     /* margin: 100px auto; */
     padding: 40px;
     /* background-color:#130101; */
@@ -49,19 +49,20 @@ body{
     /* background-color: black; */
     }
     .pas{
-    border: 1px solid #114e7209;
+        border: 1px solid #114e7200;
     width: 100%;
     height:50px;
     border-radius:10px;
-    /* background-color:rgba(255, 255, 255, 0); */
+    background-color:rgba(255, 255, 255, 0);
     font-size: 16px;
     padding-left: 10px;
     
     
     }
-    .hrr{
+    .hr1{
      position: relative;
-     top:-20px;   
+     top:-20px; 
+     left:8px;  
     }
     .pas::placeholder{
         color:rgba(255, 255, 255, 0.685)
@@ -75,15 +76,21 @@ body{
     }
     .un{
     font-size: 16px;
-    border: 1px solid #114e7200;
     width: 100%;
     height:50px;
     border-radius:10px;
+    border: 1px solid #114e7200;
     background-color:rgba(255, 255, 255, 0);
-    padding-left: 10px;
     color:white;
+    padding-left: 10px;
+    
     
     }
+    .hr2{
+        position: relative;
+        top:-10px; 
+        left:8px;  
+       }
     .un::placeholder{
         color:rgba(255, 255, 255, 0.685)
     }
@@ -98,7 +105,7 @@ body{
     .log{
     width: 25%;
     padding: 12px;
-    background-color: #0854f802;
+    background-color: #0854f8;
     color: white;
     font-size: 16px;
     border: none;

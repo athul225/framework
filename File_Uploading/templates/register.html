@@ -9,21 +9,26 @@
 </head>
 <body>
     <div class="main">
-        <h1 class="hh">Sign up</h1>
+        <h1 class="hh">Sign Up</h1>
         <form action="../register" method="POST">
             {% csrf_token %}
             <p class="p1">
                 <input type="text" name="Name" placeholder="Name" class="name">
             </p>
+            <hr class="hr1">
             <p class="p2">
                 <input type="email" name="Email" placeholder="Email" class="email">
             </p>
+            <hr class="hr2">
             <p class="p3">
                 <input type="password" name="Password" id="" placeholder="Password" class="psw">
             </p>
+            <hr class="hr3">
             <p class="p4">
+                
                 <input type="password" name="cnf_pwd" id="" placeholder="Confirm Password" class="cnf">
             </p>
+            <hr class="hr4">
             <p class="p5">
                 <input type="submit" value="Register" class="add">
             </p>
