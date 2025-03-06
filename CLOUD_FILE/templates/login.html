@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css7/login.css' %}">
+</head>
+<body>
+    <div class="all">
+        <div class="main">
+            <h1 class="hh">Login</h1>
+            <form action="../" method="POST">
+                {% csrf_token %}
+                <p class="p1">
+                    <input type="email" name="Email" id="" placeholder="Email" class="un">
+                </p>
+                <hr class="hr1">
+                <div class="pass">
+                <p class="p2">
+                    <input type="password" name="pwd" id="" placeholder="Password" class="pas">
+                
+                </p>
+                <hr class="hr2">
+                </div>
+                <p class="p3">
+                    <input type="submit" value="Login" class="log">
+                </p>
+                <p class="p4">Don't have an account ??   <a href="../register">    Register Here</a></p>
+                
+            </form>
+        </div>
+    </div> 
+</body>
+</html>

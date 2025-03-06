@@ -1,0 +1,127 @@
+body{
+
+    background-image: url("https://img.freepik.com/free-vector/abstract-background-design-with-stars-blue_53876-59271.jpg");
+    height: 90vh;
+    width:90%;
+    background-repeat: no-repeat;
+    background-size:cover;
+   
+    }
+    
+.main{
+    max-width: 450px;
+    position: relative;
+    top:150px;
+    left:600px;
+    /* margin: 100px auto; */
+    padding: 40px;
+    /* background-color:#130101; */
+    border-radius: 10px;
+    border-color: rgb(8, 8, 8);
+    
+    background-color:rgba(255, 255, 255, 0.26);
+    border: 10px solid transparent;
+        
+       
+     
+        
+    
+}
+.hh{
+    position: relative;
+    left: -170px;
+    text-align: center;
+    color:#fafaff;
+    font-size: 40px;
+    margin-bottom: 20px;
+   
+    
+}
+    
+    .p2{
+    /* width: 100%; */
+    /* height:50px; */
+    /* padding: 12px; */
+    margin: 10px 0;
+    
+    border-radius: 5px;
+    font-size: 16px;
+    /* background-color: black; */
+    }
+    .pas{
+        border: 1px solid #114e7200;
+    width: 100%;
+    height:50px;
+    border-radius:10px;
+    background-color:rgba(255, 255, 255, 0);
+    font-size: 16px;
+    padding-left: 10px;
+    color:white;
+    
+    }
+    .hr1{
+     position: relative;
+     top:-17px; 
+     left:8px;  
+    }
+    .pas::placeholder{
+        color:rgba(255, 255, 255, 0.685)
+    }
+
+    .p3{
+    
+    margin: 10px 0;  
+    border-radius: 5px;  
+    /* background-color: black; */
+    }
+    .un{
+    font-size: 16px;
+    width: 100%;
+    height:50px;
+    border-radius:10px;
+    border: 1px solid #114e7200;
+    background-color:rgba(255, 255, 255, 0);
+    color:white;
+    padding-left: 10px;
+    
+    
+    }
+    .hr2{
+        position: relative;
+        top:-10px; 
+        left:8px;  
+       }
+    .un::placeholder{
+        color:rgba(255, 255, 255, 0.685)
+    }
+    .p3 u{
+        size: 10px;
+        color:black
+    }
+    
+    .p3{
+    margin: 10px 0;
+    }
+    .log{
+    width: 25%;
+    padding: 12px;
+    background-color: #0854f8;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    left: 170px;
+    }
+    
+    .p4{
+    position: relative;
+    top:15px ;
+    left: 3px;
+    color: white;
+    }
+    
+    a {
+    color:blue;
+    text-decoration: none;
+    }
