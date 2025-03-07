@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'css7/upload.css' %}">
+    <link rel="stylesheet" href="{% static 'image/image.png' %}">
 </head>
 <body>
     <div class="main">
@@ -22,7 +23,6 @@
             </ul>
         </nav>
         <div class="side">
-            <div class="dotted-square"></div>
             <div class="sidebar">
                 <p></p>
                 <p>Home</p>
@@ -33,6 +33,22 @@
                 <p>Downloads</p>
                 <p>Trash</p>
                 <hr class>
+            </div>
+            <div class="img1">
+                <img src="https://cdn.pixabay.com/photo/2013/07/12/12/29/arrow-145786_640.png" height="200px">
+                <form action="" method="POST">
+                    {%csrf_token %}
+                    <input type="file" name="doc" id="">
+                    <input type="text" name="des" id="">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="files">
+                {% for i in docs %}
+                <a href="{{i.doc.url}}">
+                    <img src="{% static 'image/image.png' %}" alt="{{i.doc}}">
+                </a>
+                {% endfor %}
             </div>
         </div>
     </div>

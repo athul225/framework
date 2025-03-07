@@ -42,6 +42,13 @@ def login(request):
     return render(request,'login.html')
 
 def upload(request):
-    return render(request,'upload.html')
+    docs=Files.objects.all()
+    if request.method=='POST':
+        doc=request.FILES['doc']
+        des=request.POST['des']
+        data=Files.objects.create(doc=doc,des=des)
+        data.save()
+        return redirect(index)
+    return render(request,'upload.html',{'docs':docs})
 
    
