@@ -21,7 +21,7 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div class="side">
+        <div class="side"> 
             <div class="sidebar">
                 <p></p>
                 <p>Home</p>
@@ -31,8 +31,16 @@
                 <p>Videos</p>
                 <p>Downloads</p>
                 <p>Trash</p>
+
                 <div class="add">
                     <p class="p2"><a href="../upload">+</a></p>
+                </div>
+                <div class="files">
+                    {% for i in data %}
+                    <p><a href="{{i.document.url}}"><img src="{% static 'image/image.png' %}" alt="{{i.document}}" height="300px" width="400px" class="img2"></a></p>
+                    <p>{{i.des}}"</p>
+                    
+                    {% endfor %}
                 </div>
             </div>
         </div>

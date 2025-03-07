@@ -10,5 +10,5 @@ class User(models.Model):
     
     
 class Files(models.Model):
-    doc=models.FileField()
+    document=models.FileField()
     des=models.TextField()

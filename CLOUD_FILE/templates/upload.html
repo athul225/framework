@@ -36,20 +36,14 @@
             </div>
             <div class="img1">
                 <img src="https://cdn.pixabay.com/photo/2013/07/12/12/29/arrow-145786_640.png" height="200px">
-                <form action="" method="POST">
+                <form action="../upload" method="post" enctype="multipart/form-data">
                     {%csrf_token %}
-                    <input type="file" name="doc" id="">
-                    <input type="text" name="des" id="">
+                    <input type="file" name="doc" id="doc">
+                    <input type="text" name="description">
                     <input type="submit" value="Submit">
                 </form>
             </div>
-            <div class="files">
-                {% for i in docs %}
-                <a href="{{i.doc.url}}">
-                    <img src="{% static 'image/image.png' %}" alt="{{i.doc}}">
-                </a>
-                {% endfor %}
-            </div>
+            
         </div>
     </div>
 </body>

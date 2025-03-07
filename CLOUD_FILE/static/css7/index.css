@@ -84,11 +84,11 @@ nav {
     
     
     position: relative;
-    left:1450px;
-    top:150px;
+    left:1750px;
+    top:290px;
     background-color: blue;
     border-radius: 50px;
-    width:50%;
+    width:40%;
     height: 70px;
 
 }
@@ -107,4 +107,14 @@ nav {
     color:white;
     text-decoration: none;
     
+}
+.file{
+    display: block;
+    margin: 0 auto;
+    height: 80px;
+}
+.img2{
+    position:relative;
+    left:500px;
+    bottom:300px;
 }

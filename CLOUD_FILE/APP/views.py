@@ -4,10 +4,10 @@ from .models import *
 
 # Create your views here.
 def index(request):
-    
+    data=User.objects.all()
 
 
-    return render(request,'index.html')
+    return render(request,'index.html',{'data':data})
 
 
 
@@ -45,10 +45,12 @@ def upload(request):
     docs=Files.objects.all()
     if request.method=='POST':
         doc=request.FILES['doc']
-        des=request.POST['des']
-        data=Files.objects.create(doc=doc,des=des)
+        des=request.POST['description']
+        print(doc)
+        data=Files.objects.create(document=doc,des=des)
         data.save()
         return redirect(index)
     return render(request,'upload.html',{'docs':docs})
+
 
    
